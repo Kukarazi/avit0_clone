@@ -5,51 +5,54 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>Avito Clone by Dima</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="./node_modules/normalize.css/normalize.css"
+    />
     <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
     <script src="main.js"></script>
   </head>
   <body>
-    <div class="header-login">
-      <div class="left-space-box"></div>
-      <div class="left-side">
-        <a class="header-link" href="#">Business contacts</a>
-        <a class="header-link" href="#">Help</a>
+    <header class="header">
+      <div class="header-container">
+        <ul class="header-items">
+          <div class="left">
+            <li><a class="header-link" href="#">Business contacts</a></li>
+            <li><a class="header-link" href="#">Help</a></li>
+          </div>
+          <div class="right">
+            <li>
+              <a class="header-link login" href="#">Log in or register</a>
+            </li>
+            <li><a class="header-link ad" href="#">Post an ad </a></li>
+          </div>
+        </ul>
       </div>
-      <div class="right-side">
-        <a class="header-link" href="#">Log in or register</a>
-        <a class="header-link" href="#">Post an ad </a>
-      </div>
-      <div class="right-space-box"></div>
-    </div>
-    <div class="header-logos">
-      <div>
-        <a href="" class="avito-logo"></a>
-      </div>
-      <div>
-        <button class="top-rubricator">Все категории</button>
-      </div>
-      <div><input class="searchfield" type="text" /></div>
-    </div>
-    <main>
-      <h1>Chevrolet Corvette, 1971</h1>
-      <article>Article,</article>
-      <div class="highlight">
-        <a
-          href="https://www.google.com/search?q=chevrolet+corvette+1971+yellow&newwindow=1&sxsrf=ALiCzsYroZI0wCUNtHUFei7B6usDFiaxVQ:1667389120613&source=lnms&tbm=isch&sa=X&ved=2ahUKEwiM5PHBtI_7AhXiRfEDHe49CpUQ_AUoAXoECAIQAw&biw=1536&bih=746&dpr=1.25"
-          ><img
-            src="https://60.img.avito.st/image/1/1.gZ9lGba6LXZTsO9zax_dobK6K3LROiW01LopftmyLw.MLEnYVgMm0jHACOCLW7brT0C0HbfxDHJiOtgJRRGsbo"
-            alt="Chevrolet Corvette,1971 toxic yellow. Front view."
-        /></a>
-        <p>Paragraph</p>
-      </div>
-      <p>Some text,where i <span>marking some phrase</span></p>
-      <aside>
-        <div class="advertisement">
-          <div class="cat_reading">Yes,this is a cat. Walking</div>
+    </header>
+    <div class="outer-container">
+      <div class="inner-container">
+        <div class="search-panel-global">
+          <div class="logo-box">
+            <div class="logo-box-inner">
+              <a class="logo" href="#"></a>
+            </div>
+          </div>
+          <div class="search-form">
+            <div class="top-rubricator"></div>
+            <div class="search-windows">
+              <div class="suggest-search"></div>
+              <div class="region-radius-choose">
+                <div class="region"></div>
+                <div class="radius"></div>
+              </div>
+              </div>
+              <div class="search-button"></div>
+            </div>
+          </div>
         </div>
-      </aside>
-      <section>Just a fish-section</section>
-    </main>
-    <footer>This is footer</footer>
+      </div>
+    </div>
   </body>
 </html>
