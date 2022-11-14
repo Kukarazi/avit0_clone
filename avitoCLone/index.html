@@ -24,7 +24,21 @@
           </div>
           <div class="right">
             <li>
-              <a class="header-link login" href="#">Log in or register</a>
+              <button class="open-button" onclick="openForm()">Log In</button>
+              <div class="form-popup" id="myForm">
+                <form action="/action_page.php" class="form-container">
+                  <h1>Login</h1>
+              
+                  <label for="email"><b>Email</b></label>
+                  <input type="text" placeholder="Enter Email" name="email" required>
+              
+                  <label for="psw"><b>Password</b></label>
+                  <input type="password" placeholder="Enter Password" name="psw" required>
+              
+                  <button type="submit" class="btn">Login</button>
+                  <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+                </form>
+              </div>
             </li>
             <li><a class="header-link ad" href="#">Post an ad </a></li>
           </div>
@@ -42,13 +56,38 @@
           <div class="search-form">
             <div class="top-rubricator"></div>
             <div class="search-windows">
-              <div class="suggest-search"></div>
+              <div class="suggest-search">
+                  <input type="text" id="search-input" name="search">
+              </div>
               <div class="region-radius-choose">
-                <div class="region"></div>
-                <div class="radius"></div>
+                <div class="region">
+                  <select id="region-choose" name="city">
+                    <option value="Moscow">Moscow</option>
+                    <option value="Saint-Petersburg">Saint-Petersburg</option>
+                    <option value="Omsk">Omsk</option>
+                    <option value="Kamchatka">Kamchatka</option>
+                    <option value="USA">USA</option>
+                    <option value="Georgia">Georgia</option>
+                    <option value="Mexico">Mexico</option>
+                    <option value="Chile">Chile</option>
+                    <option value="Thailand">Thailand</option>
+                  </select>
+                </div>
+                <div class="radius">
+                  <select id="radius-choose" name="radius">
+                    <option value="0">0</option>
+                    <option value="100">100</option>
+                    <option value="300">300</option>
+                    <option value="600">600</option>
+                    <option value="1000">1000</option>
+                    <option value="1500">1500</option>
+                    <option value="2000">2000</option>
+                    <option value="3000">3000</option>
+                  </select>
+                </div>
               </div>
+              <input type="button" class="search-button"></input>
               </div>
-              <div class="search-button"></div>
             </div>
           </div>
         </div>
