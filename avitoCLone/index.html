@@ -24,7 +24,21 @@
           </div>
           <div class="right">
             <li>
-              <a class="header-link login" href="#">Log in or register</a>
+              <button class="open-button" onclick="openForm()">Log In</button>
+              <div class="form-popup" id="myForm">
+                <form action="/action_page.php" class="form-container">
+                  <h1>Login</h1>
+              
+                  <label for="email"><b>Email</b></label>
+                  <input type="text" placeholder="Enter Email" name="email" required>
+              
+                  <label for="psw"><b>Password</b></label>
+                  <input type="password" placeholder="Enter Password" name="psw" required>
+              
+                  <button type="submit" class="btn">Login</button>
+                  <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+                </form>
+              </div>
             </li>
             <li><a class="header-link ad" href="#">Post an ad </a></li>
           </div>
