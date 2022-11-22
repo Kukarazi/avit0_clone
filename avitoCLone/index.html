@@ -15,6 +15,131 @@
     <script src="main.js"></script>
   </head>
   <body>
+    <div id="overlay">
+                <div class="popup-login-content">
+                  <div class="inner-layout-container">
+                    <div class="button-container">
+                      <button class="close-modal-btn" id="close-modal-btn">X</button>
+                    </div>
+                <div class="login-wrapper">
+                  <div class="styles-login-form">
+                    <form class="form-form">
+                      <div class="form-title">Login form</div>
+                      <div class="hide-content">
+                        <div class="form-item-phonefield">
+                          <div class="phonefield-wrapper">
+                            <div class="phonefield-fieldset">
+                              <label class="phonefield-layout-label">
+                                <input
+                                  type="email"
+                                  class="input-input input-login"
+                                  name="login"
+                                  placeholder="Email"
+                                />
+                              </label>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="form-item-pswdfield">
+                          <div class="pswdfieldset">
+                            <div class="column-root-pswd">
+                              <div class="fieldset-field">
+                                <label class="input-layout-pswrd">
+                                  <input
+                                    type="password"
+                                    class="input-input input-pswrd"
+                                    placeholder="Password"
+                                    autocomplete="current-password"
+                                  />
+                                </label>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="form-item-checkboxpswd">
+                          <div class="checkbox-fieldset">
+                            <div class="column-root-checkbox">
+                              <div class="fieldset-field-checkbox">
+                                <div class="AuthForm-checkbox">
+                                  <label class="label-checkbox-pswrd">
+                                    <input
+                                      name="remember"
+                                      type="checkbox"
+                                      class="checkbox-input"
+                                      checked
+                                    />
+                                    <span class="checkbox-label-remember-text"
+                                      >"Remember password"</span
+                                    >
+                                  </label>
+                                  <a
+                                    target="_self"
+                                    href="#"
+                                    class="link-link-design-default"
+                                    >Forgot your password?</a
+                                  >
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="form-item-enter">
+                        <div class="form-enter-layout">
+                          <div class="form-enter-column-root">
+                            <div class="form-enter-fieldset">
+                              <div>
+                                <div class="form-enter-auth">
+                                  <button
+                                    disabled
+                                    type="submit"
+                                    name="submit"
+                                    class="button-button"
+                                  >
+                                    <span class="button-text-box">Enter</span>
+                                  </button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      </div>
+                    </form>
+                  <span class="styles-socialmedia">or continue with</span>
+                  <div class="styles-socialmedia-root">
+                      <button class="styles-icon-smn icon-vk">
+                          <img src="https://www.avito.st/remote-modules/component-auth/2e977573/ca9427263a40a6a89ab8.svg" alt="VK">
+                      </button>
+                      <button class="styles-icon-smn icon-ok">
+                          <img src="https://www.avito.st/remote-modules/component-auth/2e977573/987ab3bf6357e2b115cd.svg" alt="Odnoklassniki">
+                      </button>
+                      <button class="styles-icon-smn icon-google">
+                          <img src="https://www.avito.st/remote-modules/component-auth/2e977573/b111752122d30d2c3def.svg" alt="Google">
+                      </button>
+                      <button class="styles-icon-smn icon-apple">
+                          <img src="https://www.avito.st/remote-modules/component-auth/2e977573/d2b44d9a8476d64ca3f6.svg" alt="Apple">
+                      </button>
+                  </div>
+          
+                </div>
+                      <div class="styles-root-footer">
+                  <span class="text-text-footer">
+                      <a href="#" target="_self" class="link-link-design-default">Register</a>
+                  </span>
+                </div>
+                <div class="styles-agreement-footer">
+                  "When register and&nbsp;enter you&nbsp;accept agreement of&nbsp;
+                  <a href="#" class="link-link-design-default" target="_self">
+                      <span class="styles-agreement-footer-span">Avito usage</span>
+                  </a>&nbsp;and&nbsp;
+                  <a href="#" class="link-link-design-default" target="_self">
+                      <span class="styles-agreement-footer-span">policy of data usage.</span>
+                  </a>
+                </div>
+                  </div>
+              </div>
+            </div>
     <header class="header">
       <div class="header-container">
         <ul class="header-items">
@@ -24,21 +149,7 @@
           </div>
           <div class="right">
             <li>
-              <button class="open-button" onclick="openForm()">Log In</button>
-              <div class="form-popup" id="myForm">
-                <form action="/action_page.php" class="form-container">
-                  <h1>Login</h1>
-              
-                  <label for="email"><b>Email</b></label>
-                  <input type="text" placeholder="Enter Email" name="email" required>
-              
-                  <label for="psw"><b>Password</b></label>
-                  <input type="password" placeholder="Enter Password" name="psw" required>
-              
-                  <button type="submit" class="btn">Login</button>
-                  <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
-                </form>
-              </div>
+              <button id="show-modal-btn" class="open-button">Log In</button>
             </li>
             <li><a class="header-link ad" href="#">Post an ad </a></li>
           </div>
@@ -94,4 +205,6 @@
       </div>
     </div>
   </body>
+
+  
 </html>
