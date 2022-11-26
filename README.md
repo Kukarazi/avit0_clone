@@ -20,4 +20,4 @@ As the time goes by, and i will keep adding new parts, they can be locally divid
 
 1. Download full repository [repository_link](https://github.com/Kukarazi/avit0_clone/archive/refs/heads/main.zip)
 2. Unzip it.
-3. Then, you can launch "C:\..\avitoCLone\index.html" and other html files ( if updates requires so) directly in your browser.
+3. Then, you can launch ..\avitoCLone\index.html" and other needed files directly in your browser.
