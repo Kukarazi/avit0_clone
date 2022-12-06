@@ -1,20 +1,15 @@
 .header {
     background: #000000;
     height: 44px;
-    /*padding: 20px;*/
 }
 
 .header-container {
-    /*background: #8f0909;*/
     display: flex;
-    /*justify-content: space-between;*/
     align-content: center;
     padding-left: 24px;
-    /*margin-left: 16px;*/
 }
 
 .header-items {
-    background: #4aa440;
     display: flex;
     justify-content: space-between;
     width: 100%;
