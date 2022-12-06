@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <title>Avito Clone by Dima</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+<!--    <link-->
+<!--            rel="stylesheet"-->
+<!--            type="text/css"-->
+<!--            media="screen"-->
+<!--            href="./node_modules/normalize.css/normalize.css"-->
+<!--    />-->
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css"/>
+<!--    <script src="main.js"></script>-->
+</head>
+<body>
+    <div >
+        <header class="header">
+            <div class="header-container">
+                <ul class="header-items">
+                    <li><a class="header-link" href="#">Business contacts</a></li>
+                    <li><a class="header-link" href="#">Help</a></li>
+                    <li>
+                        <button id="show-modal-btn" class="open-button">Log In</button>
+                    </li>
+                    <li><a class="header-link ad" href="#">Post an ad </a></li>
+                </ul>
+            </div>
+        </header>
+        <div class="outer-container">
+            <div class="inner-container">
+                <div class="search-panel-global">
+                    <div class="logo-box">
+                        <div class="logo-box-inner">
+                            <a class="logo" href="#"></a>
+                        </div>
+                    </div>
+                    <div class="search-form">
+                        <div class="top-rubricator"></div>
+                        <div class="search-windows">
+                            <div class="suggest-search">
+                                <input type="text" id="search-input" name="search"/>
+                            </div>
+                            <div class="region-radius-choose">
+                                <div class="region">
+                                    <select id="region-choose" name="city">
+                                        <option value="Moscow">Moscow</option>
+                                        <option value="Saint-Petersburg">Saint-Petersburg</option>
+                                        <option value="Omsk">Omsk</option>
+                                        <option value="Kamchatka">Kamchatka</option>
+                                        <option value="USA">USA</option>
+                                        <option value="Georgia">Georgia</option>
+                                        <option value="Mexico">Mexico</option>
+                                        <option value="Chile">Chile</option>
+                                        <option value="Thailand">Thailand</option>
+                                    </select>
+                                </div>
+                                <div class="radius">
+                                    <select id="radius-choose" name="radius">
+                                        <option value="0">0</option>
+                                        <option value="100">100</option>
+                                        <option value="300">300</option>
+                                        <option value="600">600</option>
+                                        <option value="1000">1000</option>
+                                        <option value="1500">1500</option>
+                                        <option value="2000">2000</option>
+                                        <option value="3000">3000</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <input type="button" class="search-button"/>
+                        </div>
+                    </div>
+                </div>
+                <div class="index-inner-body">
+                    <div class="index-sideblock-promo">
+                        <div class="sideblock-root">
+                            <div class="sideblock-recently">
+                                <h3 class="sideblock-recently-title">Recently watched</h3>
+                                <div class="sideblock-items">
+                                    <div class="items-root">
+                                        <a
+                                                href="https://www.britannica.com/animal/capybara-genus"
+                                                class="items-link"
+                                                target="_blank"
+                                        >
+                                            <div class="items-image">
+                                                <img
+                                                        src="https://www.rainforest-alliance.org/wp-content/uploads/2021/06/capybara-square-1.jpg.optimal.jpg"
+                                                        alt="Capybara is staring right at you"
+                                                />
+                                            </div>
+                                            <div class="items-description">
+                                                <h3 class="items-title" title="Capybara watching">
+                                                    Capybara watching you
+                                                </h3>
+                                                <div class="items-price">$ priceless $</div>
+                                                <div class="items-adress">Argentina</div>
+                                            </div>
+                                        </a>
+                                        <a
+                                                href="#"
+                                                title="add to favourites"
+                                                class="items-favourite"
+                                        >
+                                        </a>
+                                    </div>
+                                    <div class="items-root">
+                                        <a
+                                                href="https://youtu.be/J_lkQfeN4rE"
+                                                class="items-link"
+                                                target="_blank"
+                                        >
+                                            <div class="items-image">
+                                                <img
+                                                        src="https://laughingsquid.com/wp-content/uploads/2020/10/Capybaras-Wait-in-Line-For-Scratches.gif?w=640"
+                                                        alt="Scratching capybara"
+                                                />
+                                            </div>
+                                            <div class="items-description">
+                                                <h3 class="items-title" title="Capybara scratching">
+                                                    Capybara scratching
+                                                </h3>
+                                                <div class="items-price">$ priceless $</div>
+                                                <div class="items-adress">Uruguay</div>
+                                            </div>
+                                        </a>
+                                        <a
+                                                href="#"
+                                                title="add to favourites"
+                                                class="items-favourite"
+                                        >
+                                        </a>
+                                    </div>
+                                    <div class="items-root">
+                                        <a
+                                                href="https://www.pinterest.com/pin/12947917666559790/"
+                                                class="items-link"
+                                                target="_blank"
+                                        >
+                                            <div class="items-image">
+                                                <img
+                                                        src="https://i.pinimg.com/564x/4a/38/95/4a38950759f9054e7e7b11c10036db19.jpg"
+                                                        alt="Chill capybara"
+                                                />
+                                            </div>
+                                            <div class="items-description">
+                                                <h3 class="items-title" title="Capybara is chilling">
+                                                    Capybara chilling
+                                                </h3>
+                                                <div class="items-price">$ priceless $</div>
+                                                <div class="items-adress">Peru</div>
+                                            </div>
+                                        </a>
+                                        <a
+                                                href="#"
+                                                title="add to favourites"
+                                                class="items-favourite"
+                                        >
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="sideblock-services-root">
+                                <h3 class="services-root-title"></h3>
+                                <ul class="services-list">
+                                    <li class="services-item">
+                                        <a href="#" class="services-delivery" target="_blank">
+                                            <img
+                                                    src="https://www.avito.ru/dstatic/build/assets/20d96f6ba021cca2abf4.svg"
+                                            />
+                                            <h4 class="services-title">Delivery</h4>
+                                            <span class="services-description"
+                                            >Return & refund policy</span
+                                            >
+                                        </a>
+                                    </li>
+                                    <li class="services-item">
+                                        <a href="#" class="services-delivery" target="_blank">
+                                            <img
+                                                    src="https://www.avito.ru/dstatic/build/assets/bc3129475755d013cd72.svg"
+                                            />
+                                            <h4 class="services-title">Car catalogue</h4>
+                                            <span class="services-description"
+                                            >Car reports: mileage, owners history, arrests & other
+                              info</span
+                                            >
+                                        </a>
+                                    </li>
+                                    <li class="services-item">
+                                        <a href="#" class="services-delivery" target="_blank">
+                                            <img
+                                                    src="https://www.avito.ru/dstatic/build/assets/1ab5948c39c97b097371.svg"
+                                            />
+                                            <h4 class="services-title">
+                                                Online booking of accommodation
+                                            </h4>
+                                            <span class="services-description"
+                                            >Daily rent of apartments and houses: a large
+                              selection of options for traveling</span
+                                            >
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="navbar-root">
+                                <ul class="navbar-about">
+                                    <li>© LLC «Smelly Solutions» 2007–2022</li>
+                                </ul>
+                                <ul class="navbar-nav">
+                                    <li><a href="#">Avito rules</a></li>
+                                    <li><a href="#">Advertisement here</a></li>
+                                    <li><a href="#">Vacancies</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="sticky-wrap-bottom">
+                            <div class="sticky-container"></div>
+                        </div>
+                    </div>
+                    <div class="index-content">
+                        <div class="index-inner-position">
+                            <div class="visual-rubricator-grid">
+                                <a href="#" class="visual-rubricator-link">
+                                    <span class="visual-rubricator-item-title">Cars</span>
+                                    <img
+                                            class="rubricator-image"
+                                            src="https://www.avito.st/s/avito/components/visual_rubricator/120x89/cat_1.png"
+                                            alt="Cars"
+                                    />
+                                </a>
+                                <a href="#" class="visual-rubricator-link">
+                                    <span class="visual-rubricator-item-title">Realty</span>
+                                    <img
+                                            class="rubricator-image"
+                                            src="https://www.avito.st/s/avito/components/visual_rubricator/120x89/cat_4.png"
+                                            alt="Realty"
+                                    />
+                                </a>
+                                <a href="#" class="visual-rubricator-link">
+                        <span class="visual-rubricator-item-title"
+                        >Electronics</span
+                        >
+                                    <img
+                                            class="rubricator-image"
+                                            src="https://www.avito.st/s/avito/components/visual_rubricator/120x89/cat_6.png"
+                                            alt="Electronics"
+                                    />
+                                </a>
+                                <a href="#" class="visual-rubricator-link">
+                                    <span class="visual-rubricator-item-title">Clothes</span>
+                                    <img
+                                            class="rubricator-image"
+                                            src="https://www.avito.st/s/avito/components/visual_rubricator/120x89/cat_27.png"
+                                            alt="Clothes"
+                                    />
+                                </a>
+                                <a href="#" class="visual-rubricator-link">
+                        <span class="visual-rubricator-item-title"
+                        >Beauty & care</span
+                        >
+                                    <img
+                                            class="rubricator-image"
+                                            src="https://www.avito.st/s/avito/components/visual_rubricator/120x89/cat_88.png"
+                                            alt="Beauty & care"
+                                    />
+                                </a>
+                                <a href="#" class="visual-rubricator-link">
+                        <span class="visual-rubricator-item-title"
+                        >For children</span
+                        >
+                                    <img
+                                            class="rubricator-image"
+                                            src="https://www.avito.st/s/avito/components/visual_rubricator/120x89/cat_30.png"
+                                            alt="For children"
+                                    />
+                                </a>
+                                <a href="#" class="visual-rubricator-link-2">
+                                    <span class="visual-rubricator-item-title">Car parts</span>
+                                    <img
+                                            class="rubricator-image"
+                                            src="https://www.avito.st/s/avito/components/visual_rubricator/120x89/cat_10.png"
+                                            alt="Car parts"
+                                    />
+                                </a>
+                                <a href="#" class="visual-rubricator-link-2">
+                                    <span class="visual-rubricator-item-title">Jobs</span>
+                                    <img
+                                            class="rubricator-image"
+                                            src="https://www.avito.st/s/avito/components/visual_rubricator/120x89/cat_110.png"
+                                            alt="Jobs"
+                                    />
+                                </a>
+                                <a href="#" class="visual-rubricator-link-2">
+                                    <span class="visual-rubricator-item-title">Services</span>
+                                    <img
+                                            class="rubricator-image"
+                                            src="https://www.avito.st/s/avito/components/visual_rubricator/120x89/cat_114.png"
+                                            alt="Services"
+                                    />
+                                </a>
+                                <a href="#" class="visual-rubricator-link-2">
+                                    <span class="visual-rubricator-item-title">Household</span>
+                                    <img
+                                            class="rubricator-image"
+                                            src="https://www.avito.st/s/avito/components/visual_rubricator/120x89/cat_2.png"
+                                            alt="Household"
+                                    />
+                                </a>
+                                <a href="#" class="visual-rubricator-link-2">
+                                    <span class="visual-rubricator-item-title">Hobby</span>
+                                    <img
+                                            class="rubricator-image"
+                                            src="https://www.avito.st/s/avito/components/visual_rubricator/120x89/cat_7.png"
+                                            alt="Hobby"
+                                    />
+                                </a>
+                                <a href="#" class="visual-rubricator-link-2">
+                                    <span class="visual-rubricator-item-title">Pets</span>
+                                    <img
+                                            class="rubricator-image"
+                                            src="https://www.avito.st/s/avito/components/visual_rubricator/120x89/cat_35.png"
+                                            alt="Pets"
+                                    />
+                                </a>
+                                <a href="#" class="visual-rubricator-link-2">
+                                    <span class="visual-rubricator-item-title">Business</span>
+                                    <img
+                                            class="rubricator-image"
+                                            src="https://www.avito.st/s/avito/components/visual_rubricator/120x89/cat_8.png"
+                                            alt="Business"
+                                    />
+                                </a>
+                            </div>
+                        </div>
+                        <div class="story-previewer"></div>
+                        <div></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
